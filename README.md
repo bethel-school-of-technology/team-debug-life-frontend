@@ -1,1 +1,0 @@
-# team-debug-life-frontend
