@@ -4,20 +4,20 @@ import './App.css';
 import Dashboard from './components/Dashboard/Dashboard';
 import Login from './components/Login/Login.js'
 import Preferences from './components/Preferences/Preferences';
+import useToken from './useToken';
 
 
 function App() {
-  const [token, setToken] = useState();
+  const { token, setToken } = useToken();
 
-  if(!token) {
-    return <Login setToken={setToken} />
-  }
 
   return (
     <div className='wrapper'>
-      <h1>Application</h1>
       <BrowserRouter>
         <Switch>
+          <Route path='/login'>
+            <Login setToken={setToken} />
+          </Route>
           <Route path='/dashboard'>
             <Dashboard />
           </Route>
@@ -31,14 +31,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// export function LoginForm(props) {
-//   return <BoxContainer>
-//     <FormContainer>
-//       <Input type='email' placeholder='Email' />
-//       <Input type='password' placeholder='Password' />
-//     </FormContainer>
-//   </BoxContainer>
-// }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
 
+
 async function loginUser(credentials) {
     return fetch('http://localhost:8080/login', {
         method: 'POST',
@@ -10,7 +11,7 @@ async function loginUser(credentials) {
         },
         body: JSON.stringify(credentials)
     })
-    .then(data => data.json())
+    .then(data => data.headers.get('Authorization'))
 }
 
 export default function Login( { setToken } ) {
@@ -49,18 +50,3 @@ export default function Login( { setToken } ) {
 Login.propTypes = {
     setToken: PropTypes.func.isRequired
 }
-
-
-
-// const login = (props) => {
-//     return <p></p>
-// }
-
-// export function LoginForm(props) {
-//     return <BoxContainer>
-//       <FormContainer>
-//         <Input type='email' placeholder='Email' />
-//         <Input type='password' placeholder='Password' />
-//       </FormContainer>
-//     </BoxContainer>
-//   }
