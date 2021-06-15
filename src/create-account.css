@@ -73,6 +73,7 @@ input::placeholder {
 }
 
 .email,
+.username,
 .password {
     width: 100%;
 }
@@ -98,9 +99,9 @@ input::placeholder {
 }
 
 .create-account button:hover {
-    color: blue;
-    background-color: white;
-    border: 2px solid #FFD700;
+    color: rgb(255, 0, 13);
+    background-color: rgb(196, 16, 16);
+    border: 2px solid whitesmoke;
 }
 
 .create-account small {
