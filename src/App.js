@@ -1,76 +1,37 @@
-import React, { Component } from 'react';
-import "./create-account.css";
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './App.css';
+import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/Login/Login.js'
+import Preferences from './components/Preferences/Preferences';
+import useToken from './useToken';
+import CreateAccount from './components/Create-account/CreateAccount.js';
 
-    
-class App extends Component {
+function App() {
+  const { token, setToken } = useToken();
 
-  constructor(props) {
-    super (props);
 
-    this.state = {
-        username: "",
-        email : "",
-        password: "",
-        formErrors: {
-            username: "",
-            email: "",
-            password: ""
-        }
-    }
+  return (
+    <div className='wrapper'>
+      <BrowserRouter>
+        <Switch>
+          <Route path='/login'>
+            <Login setToken={setToken} />
+          </Route>
+          <Route path='/dashboard'>
+            <Dashboard />
+          </Route>
+          <Route path='/preferences'>
+            <Preferences />
+            </Route>
+          <Route path = '/CreateAccount'>
+            <CreateAccount />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-  handleSubmit = e => {
-   e.preventDefault();
-  }
-  
-  render() {
-        return(
-            <div className = "wrapper">
-                <div className = "form-wrapper">
-                    <h1>Create Account</h1>
-                    <form onSubmit = {this.handlesubmit} noValidate>
-                        <div className = "username">
-                            <label htmlFor= "Username">Username</label>
-                            <input type= "text" 
-                            ClassName= "" 
-                            placeholder = "username" 
-                            type ="username" 
-                            name = "username"
-                            noValidate
-                            onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className = "password">
-                            <label htmlFor= "paswword">Password</label>
-                            <input type= "text" 
-                            ClassName= "" 
-                            placeholder = "Password" 
-                            type ="password" 
-                            name = "password"
-                            noValidate
-                            onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className = "email">
-                            <label htmlFor= "email">email</label>
-                            <input type= "text" 
-                            ClassName= "" 
-                            placeholder = "Email" 
-                            type ="email" 
-                            name = "email"
-                            noValidate
-                            onChange={this.handleChange}
-                            />
-                        </div>
-                        <div className ="createAccount">
-                          <button type="submit">Create Account</button>
-                          <small>Already have an account?</small>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        )
-    }
-}
+export default App;
 
-export default App; 
