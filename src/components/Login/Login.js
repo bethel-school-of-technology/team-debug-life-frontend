@@ -50,3 +50,13 @@ export default function Login( { setToken } ) {
 Login.propTypes = {
     setToken: PropTypes.func.isRequired
 }
+
+
+// handleSubmit = () => {
+//     const { password, confirmPassword } = this.state;
+//     if (password !== confirmPassword) {
+//         alert("Password does not match");
+//     } else {
+//         // route to game page
+//     }
+// }

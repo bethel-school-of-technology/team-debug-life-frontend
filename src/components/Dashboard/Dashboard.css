@@ -1,5 +1,8 @@
+body {background-color: rgb(175, 153, 120);        
+}
 .dashboard-wrapper {
     text-align: center;
-    color: rgb(0, 0, 0);
-    text-shadow: .25px .5px rgb(255, 0, 0);
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(39, 30, 12);
+    text-shadow: .25px .5px rgb(255, 240, 216);
 }
