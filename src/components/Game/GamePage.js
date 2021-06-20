@@ -1,31 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 
-
-async function requestUserData(token) {
-    return fetch(`/api/getuser`, {
-        method: 'GET',
-        headers: {
-            'Authorization': `${token}`,
-            'Content-Type': 'application/json'
-        },
-    })
-    .then(response => response.text()); // return true when token is valid (returns status 200)
-}
-
-async function getUser(token) {
-    let user = await requestUserData(token);
-    console.log(user);
-    return user;
-}
+import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage( { userToken } ) {
-    getUser(userToken);
-
     return(
         <div id='main'>
-            <h1>Play</h1>
+            <PlayerPanel userToken={userToken}/>
+            <h3>Dreaming Dutchman's Spooky Escape</h3>
+            <div id='game-wrapper'>
+                <div id='game-window'></div>
+                <div id='btn-bar'>
+                    <button>Save</button>
+                    <button>Save & Quit</button>
+                </div>
+            </div>
         </div>
     )
 }
