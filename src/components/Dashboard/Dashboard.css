@@ -1,8 +1,40 @@
 body {background-color: rgb(175, 153, 120);        
 }
-.dashboard-wrapper {
+
+.container {
+    display: grid;
+    grid-template-rows: 25% 100px auto;
     text-align: center;
     font-family: 'Bungee Inline', cursive;
-    color: rgb(39, 30, 12);
-    text-shadow: .25px .5px rgb(255, 240, 216);
+    color: rgb(31,31,31);
+    text-shadow: .12px .2px rgb(58, 13, 13);
+}
+
+.item {
+    display: flex; justify-content: space-evenly;
+}
+
+.about-game {
+    grid-template-columns: 40px 50px auto 50px 40px;
+}
+
+.game-instructions {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    text-align: left;
+}
+
+.title {
+    color: rgb(58, 13, 13);
+    font-size: 75px;
+    text-shadow: .25px .5px rgb(31, 31, 31);
+}
+
+.ag-header {
+    color: teal;
+    text-shadow: .25px .5px rgb(58, 13, 13);
+}
+
+.gi-header {
+    color: teal;
+    text-shadow: .25px .5px rgb(58, 13, 13);
 }

@@ -1,16 +1,42 @@
 import React from 'react';
+// import PropTypes from 'prop-types';
 import './Dashboard.css';
+
 
 export default function Dashboard() {
     return(
-        <div className='dashboard-wrapper'>
-            <h1>Dreaming Dutchman's Spooky Escape</h1>
-            <p>Help Captain "Salty Dog" Rogers break free from The Serpent of the Seas</p>
+        <div class='container' className='dashboard-wrapper'>
            
-            <h2>About Game</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h2>Game Instructions</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <h1 className='title'>Dreaming Dutchman's Spooky Escape</h1>
+            <b></b>
+            <div class='item'>
+                <div className='about-game'>
+                    <h2 className='ag-header'>About Game</h2>
+                    <p>Yo-ho! Yo-ho! Thank you for visiting our game page. Captain "Salty Dog" Van Scrits has been captured</p>
+                    <p>by the crew of The Serpent of the Seas. Help him escape to his band of mates on the Flying Dutchman.</p>
+                    <p>Flee the captains quarters. Time is ticking, get out of the mess hall with haste. Slip through the bunkroom.</p>
+                    <p>If you're not quiet you might wake the crew. With two more rooms, it is up to you. Can Captain "Salty Dog"</p>
+                    <p>Van Scrits be redeemed from this spooky dream?</p>
+                </div>
+
+                <div className='game-instructions'>
+                    <h2 className='gi-header'>Game Instructions</h2>
+                    <ul>
+                    <li>
+                            Help the captain out of each room:
+                        </li>
+                        <li>
+                            Look for clues in every place.
+                        </li>
+                        <li>
+                            Use your mouse arrow to click on the clues.
+                        </li>
+                        <li>
+                            Break loose after solving each puzzle.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>   
     );
 }
