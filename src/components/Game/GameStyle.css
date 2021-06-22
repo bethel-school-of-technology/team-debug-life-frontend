@@ -1,6 +1,7 @@
 #main {
     width: 100%;
     text-align: center;
+    background-color: rgb(170, 154, 124);   
 }
 
 #player-panel {
@@ -33,4 +34,42 @@
     width: 100%;
 
     justify-content: space-between;
+}
+
+
+
+.title {
+    color: rgb(58, 13, 13);
+    text-align: center;
+    font-size: 43px;
+    text-shadow: .25px .5px rgb(31, 31, 31);
+}
+
+
+
+.item {
+    display: flex; justify-content: space-evenly;
+    text-shadow: .12px .2px rgb(58, 13, 13);
+}
+
+.about-game {
+    width: 400px;
+    text-align: center;
+}
+
+.game-instructions {
+    width: 300px;
+    text-align: left;
+}
+
+
+.ag-header {
+    color: teal;
+    text-shadow: .25px .5px rgb(58, 13, 13);
+}
+
+.gi-header {
+    color: teal;
+    text-align: center;
+    text-shadow: .25px .5px rgb(58, 13, 13);
 }
