@@ -17,7 +17,7 @@ export default function GamePage( { userToken } ) {
                 </div>
             </div>
 
-            <div class='item'>
+            <div className='item'>
                 <div className='about-game'>
                     <h2 className='ag-header'>About Game</h2>
                     <p>Ahoy! Thank you for visiting our game page. Captain "Salty Dog" Van Scrits has been captured by the crew of The Flying Dutchman. Help him escape from the perilous ship. First, flee the captains quarters. Time is ticking, get out of the mess hall with haste. Slip through the bunkroom. If you're not quiet you might wake the crew. With two more rooms, it is up to you. Can Captain "Salty Dog" Van Scrits be redeemed from this spooky dream?</p>

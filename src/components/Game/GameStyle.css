@@ -1,7 +1,6 @@
 #main {
     width: 100%;
-    text-align: center;
-    background-color: rgb(170, 154, 124);   
+    text-align: center;  
 }
 
 #player-panel {
@@ -40,8 +39,6 @@
 
 .title {
     color: rgb(58, 13, 13);
-    text-align: center;
-    font-size: 43px;
     text-shadow: .25px .5px rgb(31, 31, 31);
 }
 
