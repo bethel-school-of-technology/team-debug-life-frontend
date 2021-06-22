@@ -1,0 +1,36 @@
+#main {
+    width: 100%;
+    text-align: center;
+}
+
+#player-panel {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 200px;
+
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#game-wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+#game-window {
+    width: 900px;
+    height: 600px;
+
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#btn-bar {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+}
