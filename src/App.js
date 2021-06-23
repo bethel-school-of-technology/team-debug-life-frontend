@@ -9,7 +9,6 @@ import useToken from './useToken';
 function App() {
   const { token, setToken } = useToken();
 
-
   return (
     <div className='wrapper'>
       <BrowserRouter>
@@ -23,7 +22,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </div>
-  );
+  ); 
 }
 
 export default App;
