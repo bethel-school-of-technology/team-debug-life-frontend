@@ -90,8 +90,8 @@ export default function GamePage({ userToken }) {
     <Box id={50} />
     <Box id={51} />
     <Box id={52} />
-    <Crowbar id={53} />
-    <Crowbar id={54} />
+    <Box id={53} />
+    <Box id={54} />
     <Box id={55} />
 </div >
 
@@ -100,8 +100,8 @@ export default function GamePage({ userToken }) {
     <Box id={57} />
     <Box id={58} />
     <Box id={59} />
-    <Crowbar id={60} />
-    <Crowbar id={61} />
+    <Box id={60} />
+    <Box id={61} />
     <Box id={62} />
 </div >
 
@@ -111,7 +111,7 @@ export default function GamePage({ userToken }) {
     <Box id={65} />
     <Box id={66} />
     <Box id={67} />
-    <Box id={68} />
+    <Crowbar id={68} />
     <Box id={69} />
 </div >
 

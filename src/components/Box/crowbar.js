@@ -15,7 +15,7 @@ function Crowbar() {
         }
     }
     
-    return <div className="box" onClick={toggleText}>{text}</div>
+    return <div className="crowbar" onClick={toggleText}>{text}</div>
 }
 
 export default Crowbar
