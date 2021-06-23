@@ -34,3 +34,28 @@
 
     justify-content: space-between;
 }
+
+.box {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
+}
+
+.crowbar {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: url('../../images/crowbar.png');
+    background-size: 81.8px 57.1px;
+}
+
+.gwindow {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 400px;
+    background: url("../../images/captainsQuarters.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
