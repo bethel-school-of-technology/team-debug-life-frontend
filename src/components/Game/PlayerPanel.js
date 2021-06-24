@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 async function requestUserData(token) {
@@ -14,12 +14,18 @@ async function requestUserData(token) {
 
 async function getUser(callback, token) {
     let user = await requestUserData(token);
+    console.log(user)
     callback(user);
 }
 
 export default function PlayerPanel( { userToken } ) {
     let [username, setUsername] = useState("");
+
+    useEffect(() => {
     getUser(setUsername, userToken);
+    }, [])
+
+    
 
     return(
         <div id='player-panel'>
