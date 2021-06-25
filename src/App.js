@@ -4,7 +4,7 @@ import './App.css';
 import GamePage from './components/Game/GamePage.js';
 import Login from './components/Login/Login.js';
 import useToken from './useToken';
-
+import CreateAccount from './components/Create-account/CreateAccount.js';
 
 function App() {
   const { token, setToken } = useToken();
@@ -15,6 +15,9 @@ function App() {
         <Switch>
           <Route path='/login'>
             <Login setToken={setToken} />
+          </Route>
+          <Route path = '/CreateAccount'>
+            <CreateAccount />
           </Route>
           <Route path='/game'>
             <GamePage userToken={token} />
@@ -27,3 +30,4 @@ function App() {
 }
 
 export default App;
+
