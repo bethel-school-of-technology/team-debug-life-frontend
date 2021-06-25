@@ -1,6 +1,6 @@
 #main {
     width: 100%;
-    text-align: center;
+    text-align: center;  
 }
 
 #player-panel {
@@ -120,4 +120,3 @@
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }
-

@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import './App.css';
 import GamePage from './components/Game/GamePage.js';
-import Login from './components/Login/Login.js'
+import Login from './components/Login/Login.js';
 import useToken from './useToken';
 
 
 function App() {
   const { token, setToken } = useToken();
-
 
   return (
     <div className='wrapper'>
@@ -24,7 +23,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </div>
-  );
+  ); 
 }
 
 export default App;
