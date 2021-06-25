@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PlayerIcon from '../../images/Default.png';
 
@@ -15,12 +15,18 @@ async function requestUserData(token) {
 
 async function getUser(callback, token) {
     let user = await requestUserData(token);
+    console.log(user)
     callback(user);
 }
 
 export default function PlayerPanel( { userToken } ) {
     let [username, setUsername] = useState("");
-    getUser(setUsername, userToken);
+
+    useEffect(() => {
+        getUser(setUsername, userToken);
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+    
 
     return(
         <div id='player-panel'>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
-
+// import {Redirect} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 async function loginUser(credentials) {
     return fetch('http://localhost:8080/login', {
@@ -14,7 +15,7 @@ async function loginUser(credentials) {
     .then(data => data.headers.get('Authorization'))
 }
 
-export default function Login( { setToken } ) {
+ function Login( props ) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
@@ -24,7 +25,12 @@ export default function Login( { setToken } ) {
             username,
             password
         });
-        setToken(token);
+        props.setToken(token);
+        
+        if(token){
+            // return  <Redirect  to='/game' />
+            props.history.push('/game')
+        }
     }
 
     return(
@@ -40,7 +46,8 @@ export default function Login( { setToken } ) {
                     <input type='password' onChange={e => setPassword(e.target.value)}/>
                 </label>
                 <div>
-                    <button type='submit'>Submit</button>
+
+                    <button onClick={handleSubmit}>Login</button>
                 </div>
             </form>
         </div>
@@ -50,3 +57,6 @@ export default function Login( { setToken } ) {
 Login.propTypes = {
     setToken: PropTypes.func.isRequired
 }
+
+
+export default withRouter(Login)
