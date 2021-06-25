@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import './GameStyle.css';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
-
-
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
