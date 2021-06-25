@@ -1,14 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
-<<<<<<< HEAD
-import Box from '../Box/index';
-import Crowbar from '../Box/crowbar';
-=======
 import GameWindow from './GameWindow.js';
 
 
->>>>>>> 15bf85b48dc0d1b410382bc122645ce327ddb27e
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
