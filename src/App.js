@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom';
 import './App.css';
-import Dashboard from './components/Dashboard/Dashboard';
-import Login from './components/Login/Login.js'
-import Preferences from './components/Preferences/Preferences';
+import GamePage from './components/Game/GamePage.js';
+import Login from './components/Login/Login.js';
 import useToken from './useToken';
 
 
 function App() {
   const { token, setToken } = useToken();
-
 
   return (
     <div className='wrapper'>
@@ -18,16 +16,13 @@ function App() {
           <Route path='/login'>
             <Login setToken={setToken} />
           </Route>
-          <Route path='/dashboard'>
-            <Dashboard />
-          </Route>
-          <Route path='/preferences'>
-            <Preferences />
+          <Route path='/game'>
+            <GamePage userToken={token} />
           </Route>
         </Switch>
       </BrowserRouter>
     </div>
-  );
+  ); 
 }
 
 export default App;
