@@ -1,21 +1,24 @@
 import React, { useState } from 'react'
 
 function Crowbar() {
-    const [text, setText] = useState('')
+    const [visible, setVisible] = useState(true)
 
-    function toggleText() {
-        if(text === '') {
-            setText('Clink')
-        }
-        else if(text === 'Clink') {
-            setText('Clank')
-        }
-        else if(text === 'Clank') {
-            setText('')
-        }
+    function toggleVisible() {
+        setVisible(false)
+    //     if(text === '') {
+    //         setText('Clink')
+    //     }
+    //     else if(text === 'Clink') {
+    //         setText('Clank')
+    //     }
+    //     else if(text === 'Clank') {
+    //         setText('')
+    //     }
     }
     
-    return <div className="crowbar" onClick={toggleText}>{text}</div>
+    return <div className={visible? "crowbar" : "noCrowbar"} onClick={toggleVisible}></div>
+   
+
 }
 
 export default Crowbar
