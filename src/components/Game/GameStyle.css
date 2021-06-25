@@ -103,6 +103,14 @@
     background-size: 81.8px 57.1px;
 }
 
+.noCrowbar {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: none;
+    background-size: 81.8px 57.1px;
+}
+
 .gwindow {
     display: flex;
     flex: auto;
