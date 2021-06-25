@@ -1,8 +1,19 @@
+@font-face {
+    font-family: 'BlackRose';
+    src: url('BlackRose.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(170, 154, 124); 
+    font-family: BlackRose;
+    background-color: antiquewhite;
 }
 
 .wrapper {
     padding: 20px;
+}
+
+p, li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

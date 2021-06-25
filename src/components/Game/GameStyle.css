@@ -4,79 +4,119 @@
 }
 
 #player-panel {
+    display: flex;
     position: absolute;
     top: 25px;
     right: 25px;
     width: 200px;
+    height: 64px;
 
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: white;
+
+    align-items: center;
+    overflow: hidden;
+    font-size: small;
+    font-weight: bold;
+}
+
+#player-icon {
+    width: 64px;
+    height: 64px;
+    float: left;
+} #player-icon img {
+    height: 100%;
+}
+
+#player-username {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #game-wrapper {
+    display: flex;
     width: 900px;
+    height: 500px;
     margin: auto;
-}
 
-#game-window {
-    width: 900px;
-    height: 600px;
+    align-items: center;
 
-    background-color: lightgray;
+    background-color: black;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 #btn-bar {
     display: flex;
-    width: 100%;
+    width: 900px;
+    margin: 2px auto 2px auto;
 
     justify-content: space-between;
 }
 
-
-@font-face {
-    font-family: 'Pirata One';
-    src: url(https://fonts.google.com/specimen/Pirata+One?query=pirata);
-    font-weight: normal;
-    font-style: normal;
+.ui-btn {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.1s;
+} .ui-btn:hover {
+    background-color: #111;
+    color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px gray;
+    cursor: pointer;
 }
 
-
-.title {
-    color: rgb(58, 13, 13);
-    text-shadow: .25px .5px rgb(31, 31, 31);
-    font-family: 'Pirata One', cursive;
-    font-size: 70px;
+#info {
+    width: 900px;
+    margin: auto;
 }
 
-.item {
-    display: flex; justify-content: space-evenly;
-    text-shadow: .12px .2px rgb(58, 13, 13);
-    font-family: 'Pirata One', cursive;
-}
-
-.about-game {
-    width: 400px;
-    text-align: center;
-}
-
-.game-instructions {
-    width: 300px;
+#game-instructions ul {
+    width: max-content;
+    margin: auto;
     text-align: left;
 }
 
-.ag-header {
-    color: teal;
-    text-align: center;
-    text-shadow: .25px .5px rgb(58, 13, 13);
-    font-size: 35px;
+
+
+/* ↓ GAME WINDOW STYLING ↓ */
+
+.box {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
 }
 
-.gi-header {
-    color: teal;
-    text-align: center;
-    text-shadow: .25px .5px rgb(58, 13, 13);
-    font-size: 35px;
+.crowbar {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: url('../../images/crowbar.png');
+    background-size: 81.8px 57.1px;
+}
+
+.noCrowbar {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: none;
+    background-size: 81.8px 57.1px;
+}
+
+.gwindow {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 400px;
+    background: url("../../images/captainsQuarters.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
 }
