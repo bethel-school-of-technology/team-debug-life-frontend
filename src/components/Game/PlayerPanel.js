@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import PlayerIcon from '../../images/Default.png';
 
 async function requestUserData(token) {
     return fetch(`/api/getuser`, {
@@ -23,7 +24,10 @@ export default function PlayerPanel( { userToken } ) {
 
     return(
         <div id='player-panel'>
-            <h5>Username: {username}</h5>
+            <div id="player-icon">
+                <img src={PlayerIcon} alt='player icon'></img>
+            </div>
+            <p id="player-username">{username}</p>
         </div>
     )
 }

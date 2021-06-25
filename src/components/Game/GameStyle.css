@@ -4,36 +4,89 @@
 }
 
 #player-panel {
+    display: flex;
     position: absolute;
     top: 25px;
     right: 25px;
     width: 200px;
+    height: 64px;
 
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: white;
+
+    align-items: center;
+    overflow: hidden;
+    font-size: small;
+    font-weight: bold;
+}
+
+#player-icon {
+    width: 64px;
+    height: 64px;
+    float: left;
+} #player-icon img {
+    height: 100%;
+}
+
+#player-username {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #game-wrapper {
+    display: flex;
     width: 900px;
+    height: 500px;
     margin: auto;
-}
 
-#game-window {
-    width: 900px;
-    height: 600px;
+    align-items: center;
 
-    background-color: lightgray;
+    background-color: black;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 #btn-bar {
     display: flex;
-    width: 100%;
+    width: 900px;
+    margin: 2px auto 2px auto;
 
     justify-content: space-between;
 }
+
+.ui-btn {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 5px 10px 5px 10px;
+    transition: all 0.1s;
+} .ui-btn:hover {
+    background-color: #111;
+    color: lightgray;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px gray;
+    cursor: pointer;
+}
+
+#info {
+    width: 900px;
+    margin: auto;
+}
+
+#game-instructions ul {
+    width: max-content;
+    margin: auto;
+    text-align: left;
+}
+
+
+
+/* ↓ GAME WINDOW STYLING ↓ */
 
 .box {
     width: 81.8px;
@@ -59,3 +112,4 @@
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }
+
