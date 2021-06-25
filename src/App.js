@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Dashboard from './components/Dashboard/Dashboard';
+import GamePage from './components/Game/GamePage.js';
 import Login from './components/Login/Login.js'
-import Preferences from './components/Preferences/Preferences';
 import useToken from './useToken';
 import CreateAccount from './components/Create-account/CreateAccount.js';
 
@@ -18,14 +17,11 @@ function App() {
           <Route path='/login'>
             <Login setToken={setToken} />
           </Route>
-          <Route path='/dashboard'>
-            <Dashboard />
-          </Route>
-          <Route path='/preferences'>
-            <Preferences />
-            </Route>
           <Route path = '/CreateAccount'>
             <CreateAccount />
+          </Route>
+          <Route path='/game'>
+            <GamePage userToken={token} />
           </Route>
         </Switch>
       </BrowserRouter>
