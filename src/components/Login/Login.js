@@ -27,9 +27,11 @@ async function loginUser(credentials) {
         });
         props.setToken(token);
         
-        if(token){
+        if (token){
             // return  <Redirect  to='/game' />
-            props.history.push('/game')
+            props.history.push('/game')   
+        } else {
+            props.history.push('/login' && alert('Your login credentials are incorrect. Please try again.'))
         }
     }
 
