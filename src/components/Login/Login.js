@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
-import {Redirect} from 'react-router-dom';
+// import {Redirect} from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
 async function loginUser(credentials) {
