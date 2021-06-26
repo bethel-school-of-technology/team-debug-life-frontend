@@ -111,6 +111,14 @@
     background-size: 81.8px 57.1px;
 }
 
+.key {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: url('../../images/jailKey.png');
+    background-size: 81.8px 57.1px;
+}
+
 .gwindow {
     display: flex;
     flex: auto;
@@ -121,3 +129,42 @@
     background-size: 900px 400px;
 }
 
+.gwindow2 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 400px;
+    background: url("../../images/messDeck.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow3 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 400px;
+    background: url("../../images/crewBunks.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow4 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 400px;
+    background: url("../../images/jailCell.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow5 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 400px;
+    background: url("../../images/topDeck.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
