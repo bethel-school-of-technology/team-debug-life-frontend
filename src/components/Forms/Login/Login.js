@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './Login.css';
+import '../Forms.css';
 // import {Redirect} from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
@@ -34,20 +34,21 @@ async function loginUser(credentials) {
     }
 
     return(
-        <div className='login-wrapper'>
+        <div className='form-wrapper'>
             <h1>Please Log In</h1>
             <form onSubmit={handleSubmit}>
-                <label>
-                    <p>Username</p>
-                    <input type='text' onChange={e => setUserName(e.target.value)}/>
-                </label>
-                <label>
-                    <p>Password</p>
-                    <input type='password' onChange={e => setPassword(e.target.value)}/>
-                </label>
-                <div>
-
-                    <button onClick={handleSubmit}>Login</button>
+                <div className='input-group'>
+                    <label>
+                        <p>Username</p>
+                        <input type='text' onChange={e => setUserName(e.target.value)}/>
+                    </label>
+                    <label>
+                        <p>Password</p>
+                        <input type='password' onChange={e => setPassword(e.target.value)}/>
+                    </label>
+                    <div className='btn-container'>
+                        <button onClick={handleSubmit} className='ui-btn form-btn'>Login</button>
+                    </div>
                 </div>
             </form>
         </div>
