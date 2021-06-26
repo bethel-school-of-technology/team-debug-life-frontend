@@ -27,7 +27,7 @@
     grid-template-rows: repeat(5, 3.5vw);
     grid-gap: 0px;
     text-align: center;
-    background-color: #282a37;
+    background-color: #f5880b;
 }
 
 content {
