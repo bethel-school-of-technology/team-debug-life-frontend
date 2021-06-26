@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
-// import {Redirect} from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
 async function loginUser(credentials) {
@@ -28,8 +27,9 @@ async function loginUser(credentials) {
         props.setToken(token);
         
         if(token){
-            // return  <Redirect  to='/game' />
             props.history.push('/game')
+        } else {
+            props.history.push('/login' && alert('Your login credentials are incorrect. Please try again.'))
         }
     }
 
@@ -46,7 +46,6 @@ async function loginUser(credentials) {
                     <input type='password' onChange={e => setPassword(e.target.value)}/>
                 </label>
                 <div>
-
                     <button onClick={handleSubmit}>Login</button>
                 </div>
             </form>
@@ -57,6 +56,5 @@ async function loginUser(credentials) {
 Login.propTypes = {
     setToken: PropTypes.func.isRequired
 }
-
 
 export default withRouter(Login)
