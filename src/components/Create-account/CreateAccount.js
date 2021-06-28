@@ -15,38 +15,27 @@ async function register(credentials) {
     .then(data => data.status)
 }
 
-    function CreateAccount() {
+
+    function CreateAccount( props ) {
         const [username, setUserName] = useState();
         const [password, setPassword] = useState();
-
+    
         const handleSubmit = async e => {
             e.preventDefault();
             const status = await register({
                 username,
                 password
             });
-        }        
+
+            if(status !== 200 ){
+                props.history.push('/createaccount' && alert('This account already exist. Please login or create a new account.'))
+            } else {
+                // props.history.push('/createaccount' && alert('Account created successfully'))
+                props.history.push('/login')
+            }
+        }
 
 
-    // function CreateAccount( props ) {
-    //     const [username, setUserName] = useState();
-    //     const [password, setPassword] = useState();
-    
-    //     const handleSubmit = async e => {
-    //         e.preventDefault();
-    //         const status = await register({
-    //             username,
-    //             password
-    //         });
-            
-    //         fetch
-
-    //         if(username !== 'username-taken'){
-    //             props.history.push('/createaccount' && alert('Account created successfully!'))
-    //         } else {
-    //             props.history.push('/createaccount' && alert('This account already exist. Please login or create a new account.'))
-    //         }
-    //     }
 
         return(
             <div className = "wrapper">
