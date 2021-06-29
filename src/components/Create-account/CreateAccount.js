@@ -28,13 +28,17 @@ async function register(credentials) {
             });
 
             if(status !== 200 ){
-                props.history.push('/createaccount' && alert('This account already exist. Please login or create a new account.'))
+                props.history.push('/createaccount') 
+                alert('This account already exists. Please login or create a new account.')
             } else {
-                // props.history.push('/createaccount' && alert('Account created successfully'))
                 props.history.push('/login')
+                alert('Account created successfully')
             }
         }
 
+        function SkipToLogin() {
+            props.history.push('/login')
+        }
 
 
         return(
@@ -67,13 +71,14 @@ async function register(credentials) {
                         </div>
                         <div className ="createAccount">
                             <button type="submit">Create Account</button>
-                        </div>
-                        <div className="disclaimer">
-                            <small >Already have an account?</small>
-                            <button type ="link">Skip to Login</button> 
-                        </div>              
+                        </div>         
                     </form>
-                </div>
+                    <div className="disclaimer">
+                        <small >Already have an account?</small>
+                        {/* <button >Skip to Login</button>  */}
+                        <button onClick= {SkipToLogin}>Skip to Login page</button>
+                    </div>     
+                </div>   
             </div>
         )
     }

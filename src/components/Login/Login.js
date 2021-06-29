@@ -25,12 +25,19 @@ async function loginUser(credentials) {
             password
         });
         props.setToken(token);
+
+        
         
         if(token){
             props.history.push('/game')
         } else {
-            props.history.push('/login' && alert('Your login credentials are incorrect. Please try again.'))
-        }
+            props.history.push('/login')
+            alert('Your login credentials are incorrect. Please try again.')
+        }  
+    }
+
+    function ReturnToCreateAccount() {
+        props.history.push('/createaccount')
     }
 
     return(
@@ -49,6 +56,10 @@ async function loginUser(credentials) {
                     <button onClick={handleSubmit}>Login</button>
                 </div>
             </form>
+            <div className="accountDisclaimer">
+                <small >Need an account?</small>
+                <button onClick= {ReturnToCreateAccount}>Set One Up</button>
+            </div>    
         </div>
     )
 }
