@@ -73,10 +73,9 @@ async function register(credentials) {
                             <button type="submit">Create Account</button>
                         </div>         
                     </form>
-                    <div className="disclaimer">
+                    <div className="accountDisclaimer">
                         <small >Already have an account?</small>
-                        {/* <button >Skip to Login</button>  */}
-                        <button onClick= {SkipToLogin}>Skip to Login page</button>
+                        <button onClick= {SkipToLogin}>Skip to Login</button>
                     </div>     
                 </div>   
             </div>
