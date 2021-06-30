@@ -1,7 +1,19 @@
 import React, { useState } from 'react';
-import "../Forms.css"; 
+import { withRouter } from 'react-router-dom';
+import "../Forms.css";
 
-export default function CreateAccount() {
+async function register(credentials) {
+    return fetch('http://localhost:8080/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(credentials)
+    })
+    .then(data => data.status)
+}
+
+function CreateAccount( props ) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
@@ -11,6 +23,18 @@ export default function CreateAccount() {
             username,
             password
         });
+
+        if(status !== 200 ){
+            props.history.push('/createaccount') 
+            alert('This account already exists. Please login or create a new account.')
+        } else {
+            props.history.push('/login')
+            alert('Account created successfully')
+        }
+    }
+
+    function SkipToLogin() {
+        props.history.push('/login')
     }
 
     return(
@@ -32,19 +56,13 @@ export default function CreateAccount() {
                         </div>
                     </div>
                 </form>
+                <div className="accountDisclaimer">
+                    <small >Already have an account?</small>
+                    <button onClick= {SkipToLogin}>Skip to Login</button>
+                </div>   
             </div>
         </div>
     )
-    }
-
-
-async function register(credentials) {
-    return fetch('http://localhost:8080/register', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(credentials)
-    })
-    .then(data => data.status)
 }
+
+export default withRouter(CreateAccount)

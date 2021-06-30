@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../Forms.css';
-// import {Redirect} from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
 async function loginUser(credentials) {
@@ -26,11 +25,19 @@ async function loginUser(credentials) {
             password
         });
         props.setToken(token);
+
+        
         
         if(token){
-            // return  <Redirect  to='/game' />
             props.history.push('/game')
-        }
+        } else {
+            props.history.push('/login')
+            alert('Your login credentials are incorrect. Please try again.')
+        }  
+    }
+
+    function ReturnToCreateAccount() {
+        props.history.push('/createaccount')
     }
 
     return(
@@ -50,6 +57,10 @@ async function loginUser(credentials) {
                         <button onClick={handleSubmit} className='ui-btn form-btn'>Login</button>
                     </div>
                 </div>
+                <div className="accountDisclaimer">
+                    <small >Need an account?</small>
+                    <button onClick= {ReturnToCreateAccount}>Set One Up</button>
+                </div>   
             </form>
         </div>
     )
