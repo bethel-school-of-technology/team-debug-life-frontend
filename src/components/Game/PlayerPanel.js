@@ -39,9 +39,7 @@ function PlayerPanel( props ) {
             }
         }
         setup();
-    }, [])
-
-    
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     return(
         <div id='player-panel'>
