@@ -1,0 +1,31 @@
+.form-wrapper {
+    width: 600px;
+
+    margin: auto; margin-top: 50px;
+    padding: 10px 0 30px 0;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px black;
+    background-color: white;
+    text-align: center;
+} .form-wrapper p {
+    margin-bottom: 0;
+} .form-wrapper input {
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 2px;
+}
+
+.input-group {
+    width: max-content;
+    margin: auto;
+    text-align: left;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.form-btn {
+    margin-top: 10px;
+}

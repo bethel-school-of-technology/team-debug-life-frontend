@@ -23,11 +23,9 @@ export default function PlayerPanel( { userToken } ) {
     let [username, setUsername] = useState("");
 
     useEffect(() => {
-    getUser(setUsername, userToken);
-    }, [])
-
-    
-
+        getUser(setUsername, userToken);
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  
     return(
         <div id='player-panel'>
             <div id="player-icon">

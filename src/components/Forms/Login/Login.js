@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './Login.css';
+import '../Forms.css';
 import { withRouter } from 'react-router-dom';
 
 async function loginUser(credentials) {
@@ -41,25 +41,27 @@ async function loginUser(credentials) {
     }
 
     return(
-        <div className='login-wrapper'>
+        <div className='form-wrapper'>
             <h1>Please Log In</h1>
             <form onSubmit={handleSubmit}>
-                <label>
-                    <p>Username</p>
-                    <input type='text' onChange={e => setUserName(e.target.value)}/>
-                </label>
-                <label>
-                    <p>Password</p>
-                    <input type='password' onChange={e => setPassword(e.target.value)}/>
-                </label>
-                <div>
-                    <button onClick={handleSubmit}>Login</button>
+                <div className='input-group'>
+                    <label>
+                        <p>Username</p>
+                        <input type='text' onChange={e => setUserName(e.target.value)}/>
+                    </label>
+                    <label>
+                        <p>Password</p>
+                        <input type='password' onChange={e => setPassword(e.target.value)}/>
+                    </label>
+                    <div className='btn-container'>
+                        <button onClick={handleSubmit} className='ui-btn form-btn'>Login</button>
+                    </div>
                 </div>
+                <div className="accountDisclaimer">
+                    <small >Need an account?</small>
+                    <button onClick= {ReturnToCreateAccount}>Set One Up</button>
+                </div>   
             </form>
-            <div className="accountDisclaimer">
-                <small >Need an account?</small>
-                <button onClick= {ReturnToCreateAccount}>Set One Up</button>
-            </div>    
         </div>
     )
 }
@@ -67,5 +69,6 @@ async function loginUser(credentials) {
 Login.propTypes = {
     setToken: PropTypes.func.isRequired
 }
+
 
 export default withRouter(Login)
