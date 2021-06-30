@@ -16,7 +16,7 @@ function App() {
           <Route path='/login'>
             <Login setToken={setToken} />
           </Route>
-          <Route path = '/createAccount'>
+          <Route path = '/createaccount'>
             <CreateAccount />
           </Route>
           <Route path='/game'>

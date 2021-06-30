@@ -1,6 +1,6 @@
 #main {
     width: 100%;
-    text-align: center;
+    text-align: center;  
 }
 
 #player-panel {
@@ -103,6 +103,14 @@
     background-size: 81.8px 57.1px;
 }
 
+.noCrowbar {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: none;
+    background-size: 81.8px 57.1px;
+}
+
 .gwindow {
     display: flex;
     flex: auto;
@@ -112,4 +120,3 @@
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }
-
