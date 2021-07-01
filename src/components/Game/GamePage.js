@@ -54,6 +54,7 @@ export default function GamePage({ userToken }) {
                     </ul>
                 </div>
             </div>
+
         </div>
     )
 }
