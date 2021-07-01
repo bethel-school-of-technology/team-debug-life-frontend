@@ -95,6 +95,49 @@
 
 }
 
+.egg {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: url('../../images/Deviled\ Egg.png');
+    background-size: 81.8px 57.1px;
+}
+
+.floorBoard {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
+}
+
+.messExit {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
+}
+
+.bunkDoor {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
+}
+
+.jailDoor {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
+}
+
+.plank {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+
+}
+
 .crowbar {
     width: 81.8px;
     height: 57.1px;
@@ -111,12 +154,68 @@
     background-size: 81.8px 57.1px;
 }
 
+.key {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: url('../../images/jailKey.png');
+    background-size: 81.8px 57.1px;
+}
+
+.lightsaber {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
+    background-image: url('../../images/Lightsaber.png');
+    background-size: 81.8px 57.1px;
+}
+
 .gwindow {
     display: flex;
     flex: auto;
     width: 900px;
-    height: 400px;
+    height: 450px;
     background: url("../../images/captainsQuarters.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow2 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/messDeck.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow3 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/crewBunks.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow4 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/jailCell.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow5 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/topDeck.png");
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }

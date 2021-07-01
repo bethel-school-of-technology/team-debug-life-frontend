@@ -1,12 +1,12 @@
 import React from 'react';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
-import FloorBoard from '../Box/floorBoard';
+import Egg from '../Box/egg';
+import MessExit from '../Box/messExit';
 
-export default function GameWindow() {
-
+export default function GameWindow2() {
     return(
-        <div className="gwindow">
+        <div className="gwindow2">
             <div className="row">
                 <Box id={0} />
                 <Box id={1} />
@@ -21,7 +21,7 @@ export default function GameWindow() {
                 <Box id={7} />
                 <Box id={8} />
                 <Box id={9} />
-                <Box id={10} />
+                <MessExit id={10} />
                 <Box id={11} />
                 <Box id={12} />
                 <Box id={13} />
@@ -31,7 +31,7 @@ export default function GameWindow() {
                 <Box id={14} />
                 <Box id={15} />
                 <Box id={16} />
-                <Box id={17} />
+                <MessExit id={17} />
                 <Box id={18} />
                 <Box id={19} />
                 <Box id={20} />
@@ -41,7 +41,7 @@ export default function GameWindow() {
                 <Box id={21} />
                 <Box id={22} />
                 <Box id={23} />
-                <Box id={24} />
+                <MessExit id={24} />
                 <Box id={25} />
                 <Box id={26} />
                 <Box id={27} />
@@ -54,7 +54,7 @@ export default function GameWindow() {
                 <Box id={31} />
                 <Box id={32} />
                 <Box id={33} />
-                <FloorBoard id={34} />
+                <Box id={34} />
             </div >
 
             <div className="row">
@@ -64,34 +64,34 @@ export default function GameWindow() {
                 <Box id={38} />
                 <Box id={39} />
                 <Box id={40} />
-                <FloorBoard id={41}/>
+                <Box id={41}/>
             </div >
 
             <div className="row">
                 <Box id={42} />
                 <Box id={43} />
                 <Box id={44} />
-                <Box id={45} />
+                <Egg id={45} />
                 <Box id={46} />
                 <Box id={47} />
-                <FloorBoard id={48} />
+                <Box id={48} />
             </div >
 
             <div className="row">
                 <Box id={49} />
                 <Box id={50} />
                 <Box id={51} />
-                <Box id={52} />
+                <MessExit id={52} />
                 <Box id={53} />
                 <Box id={54} />
-                <FloorBoard id={55} />
+                <Box id={55} />
             </div >
 
             <div className="row">
                 <Box id={56} />
                 <Box id={57} />
                 <Box id={58} />
-                <Box id={59} />
+                <MessExit id={59} />
                 <Box id={60} />
                 <Box id={61} />
                 <Box id={62} />
@@ -101,9 +101,9 @@ export default function GameWindow() {
                 <Box id={63} />
                 <Box id={64} />
                 <Box id={65} />
-                <Box id={66} />
+                <MessExit id={66} />
                 <Box id={67} />
-                <Crowbar id={68} />
+                <Box id={68} />
                 <Box id={69} />
             </div >
 
