@@ -1,0 +1,33 @@
+
+.Game {
+    display: flex;
+    height: 50vh;
+    font-weight: bold;
+    width: 50px;
+
+}
+
+.inventory {
+    margin-bottom: 15vh;
+    display: grid;
+    grid-template-columns: repeat(10, 5vw);
+    grid-template-rows: repeat(5, 3.5vw);
+    grid-gap: 0px;
+    text-align: center;
+    background: rgb(245, 243, 243);
+}
+
+content {
+    overflow: hidden;
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+}
+
+.Tools{
+    background-color: chocolate;
+}

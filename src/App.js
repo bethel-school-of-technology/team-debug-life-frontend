@@ -5,8 +5,8 @@ import GamePage from './components/Game/GamePage.js';
 import Login from './components/Login/Login.js';
 import useToken from './useToken';
 import CreateAccount from './components/Create-account/CreateAccount.js';
-
-
+import './components/Game/inventory.js';
+import './components/Game/level.js';
 
 function App() {
   const { token, setToken } = useToken();
@@ -30,6 +30,8 @@ function App() {
     </div>
   ); 
 }
+
+
 
 export default App;
 

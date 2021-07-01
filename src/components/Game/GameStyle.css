@@ -115,50 +115,9 @@
     display: flex;
     flex: auto;
     width: 900px;
-    height: 400px;
+    height: 450px;
     background: url("../../images/captainsQuarters.jpg");
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }
 
-.App {
-    display: flex;
-    height: 100vh;
-    background-color: #16324f;
-    color:3c6e71;
-    font-weight: bold;
-}
-
-.code-area {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    border-right: 3px solid #3c6e71
-}
-
-.console {
-    border-top: 3px dashed #3c6e71;
-    background-color: #13293d;
-    height:20%;
-    padding: 0.5rem;
-}
-
-.inventory {
-    margin-bottom: 15vh;
-    display: grid;
-    grid-template-columns: repeat(12, 3.5vw);
-    grid-template-rows: repeat(5, 3.5vw);
-    grid-gap: 0px;
-    text-align: center;
-    background-color: #f5880b;
-}
-
-content {
-    overflow: hidden;
-    width: 50%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}

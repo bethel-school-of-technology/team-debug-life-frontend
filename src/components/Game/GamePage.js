@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow from './GameWindow.js';
-
-
 import PlayerPanel from './PlayerPanel.js';
+import Game from './inventory.js';
+
 
 export default function GamePage({ userToken }) {
     return (
@@ -12,7 +12,7 @@ export default function GamePage({ userToken }) {
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow/>
+                <GameWindow />
             </div>
 
             <div id='btn-bar'>
@@ -52,6 +52,7 @@ export default function GamePage({ userToken }) {
                 </div>
             </div>
 
+
             <div className='item'>
                 <div className='about-game'>
                     <h2 className='ag-header'>About Game</h2>
@@ -84,3 +85,5 @@ export default function GamePage({ userToken }) {
 GamePage.propTypes = {
     userToken: PropTypes.string.isRequired
 }
+
+

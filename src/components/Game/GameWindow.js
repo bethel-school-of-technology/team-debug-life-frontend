@@ -1,10 +1,12 @@
 import React from 'react';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
+import Game from './inventory.js';
 
 export default function GameWindow() {
     return(
         <div className="gwindow">
+
             <div className="row">
                 <Box id={0} />
                 <Box id={1} />
@@ -13,6 +15,8 @@ export default function GameWindow() {
                 <Box id={4} />
                 <Box id={5} />
                 <Box id={6} />
+
+                <aside><Game/></aside>
             </div>
 
             <div className="row">
