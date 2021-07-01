@@ -1,18 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
-import GameWindow from './GameWindow.js';
-import PlayerPanel from './PlayerPanel.js';
+import GameWindow2 from './GameWindow2.js';
+//added code
+import {BrowserRouter as Router, useHistory} from 'react-router-dom';
 
-// class MyComponent extends React.Component { 
-    
-//     myFunction() { 
-//       this.props.history.push("/dashboard"); 
-//     } 
-    
-//   } 
-  
-//   export default withRouter(MyComponent);
+
+
+import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
     return (
@@ -20,7 +15,7 @@ export default function GamePage({ userToken }) {
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow/>
+                <GameWindow2/>
             </div>
 
             <div id='btn-bar'>

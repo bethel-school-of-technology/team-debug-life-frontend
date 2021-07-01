@@ -1,7 +1,8 @@
 import React from 'react';
 import Box from '../Box/index';
-import Crowbar from '../Box/crowbar';
-import Key from '../Box/key';
+import JailDoor from '../Box/jailDoor';
+import Lightsaber from '../Box/lightsaber';
+
 
 export default function GameWindow4() {
     return(
@@ -33,7 +34,7 @@ export default function GameWindow4() {
                 <Box id={17} />
                 <Box id={18} />
                 <Box id={19} />
-                <Box id={20} />
+                <Lightsaber id={20} />
             </div >
 
             <div className="row">
@@ -49,8 +50,8 @@ export default function GameWindow4() {
             <div className="row">
                 <Box id={28} />
                 <Box id={29} />
-                <Box id={30} />
-                <Box id={31} />
+                <JailDoor id={30} />
+                <JailDoor id={31} />
                 <Box id={32} />
                 <Box id={33} />
                 <Box id={34} />
@@ -59,8 +60,8 @@ export default function GameWindow4() {
             <div className="row">
                 <Box id={35} />
                 <Box id={36} />
-                <Box id={37} />
-                <Box id={38} />
+                <JailDoor id={37} />
+                <JailDoor id={38} />
                 <Box id={39} />
                 <Box id={40} />
                 <Box id={41}/>
@@ -102,7 +103,7 @@ export default function GameWindow4() {
                 <Box id={65} />
                 <Box id={66} />
                 <Box id={67} />
-                <Key id={68} />
+                <Box id={68} />
                 <Box id={69} />
             </div >
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '../Box/index';
-import Crowbar from '../Box/crowbar';
+import Key from '../Box/key';
+import BunkDoor from '../Box/bunkDoor';
 
 export default function GameWindow3() {
     return(
@@ -22,7 +23,7 @@ export default function GameWindow3() {
                 <Box id={10} />
                 <Box id={11} />
                 <Box id={12} />
-                <Box id={13} />
+                <Key id={13} />
             </div >
 
             <div className="row">
@@ -49,9 +50,9 @@ export default function GameWindow3() {
                 <Box id={28} />
                 <Box id={29} />
                 <Box id={30} />
-                <Box id={31} />
-                <Box id={32} />
-                <Box id={33} />
+                <BunkDoor id={31} />
+                <BunkDoor id={32} />
+                <BunkDoor id={33} />
                 <Box id={34} />
             </div >
 
@@ -101,7 +102,7 @@ export default function GameWindow3() {
                 <Box id={65} />
                 <Box id={66} />
                 <Box id={67} />
-                <Crowbar id={68} />
+                <Box id={68} />
                 <Box id={69} />
             </div >
 

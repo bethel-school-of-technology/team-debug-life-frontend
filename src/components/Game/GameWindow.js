@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
+import FloorBoard from '../Box/floorBoard';
 
 export default function GameWindow() {
     return(
@@ -52,7 +53,7 @@ export default function GameWindow() {
                 <Box id={31} />
                 <Box id={32} />
                 <Box id={33} />
-                <Box id={34} />
+                <FloorBoard id={34} />
             </div >
 
             <div className="row">
@@ -62,7 +63,7 @@ export default function GameWindow() {
                 <Box id={38} />
                 <Box id={39} />
                 <Box id={40} />
-                <Box id={41}/>
+                <FloorBoard id={41}/>
             </div >
 
             <div className="row">
@@ -72,7 +73,7 @@ export default function GameWindow() {
                 <Box id={45} />
                 <Box id={46} />
                 <Box id={47} />
-                <Box id={48} />
+                <FloorBoard id={48} />
             </div >
 
             <div className="row">
@@ -82,7 +83,7 @@ export default function GameWindow() {
                 <Box id={52} />
                 <Box id={53} />
                 <Box id={54} />
-                <Box id={55} />
+                <FloorBoard id={55} />
             </div >
 
             <div className="row">

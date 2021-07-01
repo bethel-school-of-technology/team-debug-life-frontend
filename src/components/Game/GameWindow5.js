@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
+import Plank from '../Box/plank';
 
 export default function GameWindow5() {
     return(
@@ -89,8 +90,8 @@ export default function GameWindow5() {
                 <Box id={56} />
                 <Box id={57} />
                 <Box id={58} />
-                <Box id={59} />
-                <Box id={60} />
+                <Plank id={59} />
+                <Plank id={60} />
                 <Box id={61} />
                 <Box id={62} />
             </div >
@@ -99,8 +100,8 @@ export default function GameWindow5() {
                 <Box id={63} />
                 <Box id={64} />
                 <Box id={65} />
-                <Box id={66} />
-                <Box id={67} />
+                <Plank id={66} />
+                <Plank id={67} />
                 <Crowbar id={68} />
                 <Box id={69} />
             </div >

@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
+import Egg from '../Box/egg';
 
 export default function GameWindow2() {
     return(
@@ -59,8 +60,8 @@ export default function GameWindow2() {
                 <Box id={35} />
                 <Box id={36} />
                 <Box id={37} />
-                <Box id={38} />
-                <Box id={39} />
+                <Egg id={38} />
+                <Egg id={39} />
                 <Box id={40} />
                 <Box id={41}/>
             </div >
@@ -69,8 +70,8 @@ export default function GameWindow2() {
                 <Box id={42} />
                 <Box id={43} />
                 <Box id={44} />
-                <Box id={45} />
-                <Box id={46} />
+                <Egg id={45} />
+                <Egg id={46} />
                 <Box id={47} />
                 <Box id={48} />
             </div >
@@ -101,7 +102,7 @@ export default function GameWindow2() {
                 <Box id={65} />
                 <Box id={66} />
                 <Box id={67} />
-                <Crowbar id={68} />
+                <Box id={68} />
                 <Box id={69} />
             </div >
 
