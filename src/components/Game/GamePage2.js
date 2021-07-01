@@ -3,19 +3,24 @@ import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow2 from './GameWindow2.js';
 //added code
-import {BrowserRouter as Router, useHistory} from 'react-router-dom';
+import { BrowserRouter as Router, useHistory } from 'react-router-dom';
 
 
 
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
+
+    // Reset inventory on start of room 2
+    localStorage.setItem('inventory', ['Crowbar']);
+    console.log(localStorage.getItem('inventory'));
+
     return (
         <div id='main'>
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow2/>
+                <GameWindow2 />
             </div>
 
             <div id='btn-bar'>

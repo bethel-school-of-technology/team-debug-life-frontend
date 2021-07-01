@@ -15,7 +15,7 @@ export default function GamePage({ userToken }) {
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow/>
+                <GameWindow />
             </div>
 
             <div id='btn-bar'>

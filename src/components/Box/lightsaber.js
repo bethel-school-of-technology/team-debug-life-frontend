@@ -7,11 +7,13 @@ function Lightsaber() {
         setVisible(false)
     
     }
-   // function crowbarEquip() {
-   //     if (visible=false)
-        
+    function setItem() {
+        let inventory = localStorage.getItem('inventory');
+        localStorage.setItem('inventory', [...inventory, 'Lightsaber']);
+    }
 
-   return <div className={visible? "lightsaber" : "noCrowbar"} onClick={toggleVisible}></div>
+
+    return <div className={visible ? "lightsaber" : "noCrowbar"} onClick={function() {setItem(); toggleVisible()}}></div>
     }
     
     

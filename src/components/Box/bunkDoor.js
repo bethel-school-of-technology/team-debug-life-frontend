@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
-import hasCrowbar from './crowbar';
 
 function BunkDoor() {
     let history = useHistory();
@@ -10,11 +9,9 @@ const redirect = () => {
 }
 
     function nextLevel4() {
-        //testing
-        let hasCrowbar = true;
-        if(hasCrowbar === true) {
+        let inventory = localStorage.getItem('inventory');
+        if (inventory && inventory.includes('Key')) {
             redirect()
-            //switch to hasKey
         }
     }
     

@@ -8,12 +8,17 @@ import GameWindow4 from './GameWindow4.js';
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
+
+    // Reset inventory on start of room 4
+    localStorage.setItem('inventory', ['Crowbar', 'Key']);
+    console.log(localStorage.getItem('inventory'));
+
     return (
         <div id='main'>
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow4/>
+                <GameWindow4 />
             </div>
 
             <div id='btn-bar'>

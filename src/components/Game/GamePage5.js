@@ -8,12 +8,17 @@ import GameWindow5 from './GameWindow5.js';
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
+
+    // Reset inventory on start of room 5
+    localStorage.setItem('inventory', ['Crowbar', 'Key', 'Lightsaber']);
+    console.log(localStorage.getItem('inventory'));
+
     return (
         <div id='main'>
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow5/>
+                <GameWindow5 />
             </div>
 
             <div id='btn-bar'>
