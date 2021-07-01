@@ -8,14 +8,14 @@ function Crowbar() {
 
     }
     function setItem() {
-        localStorage.setItem('Inventory', ['Crowbar'])
-        console.log("Why You Do Dis? Why Are you like this?")
+        let inventory = localStorage.getItem('inventory');
+        localStorage.setItem('inventory', [...inventory, 'Crowbar']);
     }
     // function crowbarEquip() {
     //     if (visible=false)
 
 
-    return <div className={visible ? "crowbar" : "noCrowbar"} onClick={setItem, toggleVisible}></div>
+    return <div className={visible ? "crowbar" : "noCrowbar"} onClick={function() {setItem(); toggleVisible()}}></div>
 }
 
 

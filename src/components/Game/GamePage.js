@@ -5,6 +5,11 @@ import GameWindow from './GameWindow.js';
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
+
+    // Reset inventory on start of room 1
+    localStorage.setItem('inventory', []);
+    console.log(localStorage.getItem('inventory'));
+
     return (
         <div id='main'>
             <PlayerPanel userToken={userToken} />
