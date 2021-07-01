@@ -10,6 +10,9 @@ function Tools() {
         function toggleVisible() {
             setVisible(true)
         }
+
+        let inventory = 
+        localStorage.setItem ('inventory'[inventory, 'Crowbar'])
         
         return <div className={visible? "Crowbar" : "noCrowbar"} onClick={toggleVisible}></div>
     }
