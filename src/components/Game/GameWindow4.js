@@ -1,12 +1,12 @@
 import React from 'react';
 import Box from '../Box/index';
-import Crowbar from '../Box/crowbar';
-import FloorBoard from '../Box/floorBoard';
+import JailDoor from '../Box/jailDoor';
+import Lightsaber from '../Box/lightsaber';
 
-export default function GameWindow() {
 
+export default function GameWindow4() {
     return(
-        <div className="gwindow">
+        <div className="gwindow4">
             <div className="row">
                 <Box id={0} />
                 <Box id={1} />
@@ -34,7 +34,7 @@ export default function GameWindow() {
                 <Box id={17} />
                 <Box id={18} />
                 <Box id={19} />
-                <Box id={20} />
+                <Lightsaber id={20} />
             </div >
 
             <div className="row">
@@ -50,21 +50,21 @@ export default function GameWindow() {
             <div className="row">
                 <Box id={28} />
                 <Box id={29} />
-                <Box id={30} />
-                <Box id={31} />
+                <JailDoor id={30} />
+                <JailDoor id={31} />
                 <Box id={32} />
                 <Box id={33} />
-                <FloorBoard id={34} />
+                <Box id={34} />
             </div >
 
             <div className="row">
                 <Box id={35} />
                 <Box id={36} />
-                <Box id={37} />
-                <Box id={38} />
+                <JailDoor id={37} />
+                <JailDoor id={38} />
                 <Box id={39} />
                 <Box id={40} />
-                <FloorBoard id={41}/>
+                <Box id={41}/>
             </div >
 
             <div className="row">
@@ -74,7 +74,7 @@ export default function GameWindow() {
                 <Box id={45} />
                 <Box id={46} />
                 <Box id={47} />
-                <FloorBoard id={48} />
+                <Box id={48} />
             </div >
 
             <div className="row">
@@ -84,7 +84,7 @@ export default function GameWindow() {
                 <Box id={52} />
                 <Box id={53} />
                 <Box id={54} />
-                <FloorBoard id={55} />
+                <Box id={55} />
             </div >
 
             <div className="row">
@@ -103,7 +103,7 @@ export default function GameWindow() {
                 <Box id={65} />
                 <Box id={66} />
                 <Box id={67} />
-                <Crowbar id={68} />
+                <Box id={68} />
                 <Box id={69} />
             </div >
 

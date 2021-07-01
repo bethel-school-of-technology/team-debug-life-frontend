@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
-import GameWindow from './GameWindow.js';
+import GameWindow4 from './GameWindow4.js';
+
+
+
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
 
-    // Reset inventory on start of room 1
-    localStorage.setItem('inventory', []);
+    // Reset inventory on start of room 4
+    localStorage.setItem('inventory', ['Crowbar', 'Key']);
     console.log(localStorage.getItem('inventory'));
 
     return (
@@ -15,7 +18,7 @@ export default function GamePage({ userToken }) {
             <PlayerPanel userToken={userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
-                <GameWindow />
+                <GameWindow4 />
             </div>
 
             <div id='btn-bar'>
@@ -54,7 +57,6 @@ export default function GamePage({ userToken }) {
                     </ul>
                 </div>
             </div>
-
         </div>
     )
 }
