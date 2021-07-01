@@ -1,11 +1,8 @@
 import React from 'react';
 import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
-<<<<<<< HEAD
 import Game from './inventory.js';
-=======
 import FloorBoard from '../Box/floorBoard';
->>>>>>> 4a983c4afca3ed62ff8c52ec0fa6a757567d25cc
 
 export default function GameWindow() {
 
