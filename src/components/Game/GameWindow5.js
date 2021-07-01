@@ -102,7 +102,7 @@ export default function GameWindow5() {
                 <Box id={65} />
                 <Plank id={66} />
                 <Plank id={67} />
-                <Crowbar id={68} />
+                <Box id={68} />
                 <Box id={69} />
             </div >
 
