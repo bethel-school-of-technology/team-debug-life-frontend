@@ -5,16 +5,21 @@ import Crowbar from '../Box/crowbar';
 function Tools() {
 
     function Crowbar() {
-        const [visible, setVisible] = useState(true)
+        const [visible, setVisible] = useState(false)
     
         function toggleVisible() {
             setVisible(true)
         }
 
-        let inventory = 
-        localStorage.setItem ('inventory'[inventory, 'Crowbar'])
         
-        return <div className={visible? "Crowbar" : "noCrowbar"} onClick={toggleVisible}></div>
+
+
+
+
+
+     
+        
+        return <div className={visible? "noCrowbar ": "Crowbar"} onClick={toggleVisible}></div>
     }
 };
 
