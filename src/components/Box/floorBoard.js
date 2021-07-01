@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
-import hasCrowbar from './crowbar';
-import cEquip from '../Box/crowbar';
+
+
 
 function FloorBoard() {
     let history = useHistory();
-
-const redirect = () => {
-    history.push('/game2')
-}
+    localStorage.setItem('inventory', ['']);
+    console.log(localStorage.getItem('inventory'));
+    const redirect = () => {
+        history.push('/game2')
+    }
 
     function nextLevel2() {
-        //testing
-        let hasCrowbar = false;
-        if(hasCrowbar === true) {
+        let inventory = localStorage.getItem('Inventory');
+        if (inventory.includes('Crowbar')) {
             redirect()
-            //switch to hasLightsaber
         }
+        console.log(inventory)
     }
-    
+
+
     return <div className="floorBoard" onClick={nextLevel2}>2</div>
 }
 

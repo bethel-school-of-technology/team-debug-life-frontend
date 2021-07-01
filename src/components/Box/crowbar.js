@@ -7,14 +7,15 @@ function Crowbar() {
         setVisible(false)
 
     }
-    function cEquip() {
-        let hasCrowbar = true;
+    function setItem() {
+        localStorage.setItem('Inventory', ['Crowbar'])
+        console.log("Why You Do Dis? Why Are you like this?")
     }
     // function crowbarEquip() {
     //     if (visible=false)
 
 
-    return <div className={visible ? "crowbar" : "noCrowbar"} onClick={cEquip, toggleVisible}></div>
+    return <div className={visible ? "crowbar" : "noCrowbar"} onClick={setItem, toggleVisible}></div>
 }
 
 

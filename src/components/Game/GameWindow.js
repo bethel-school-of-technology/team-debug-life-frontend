@@ -4,6 +4,7 @@ import Crowbar from '../Box/crowbar';
 import FloorBoard from '../Box/floorBoard';
 
 export default function GameWindow() {
+
     return(
         <div className="gwindow">
             <div className="row">

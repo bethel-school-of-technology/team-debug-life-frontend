@@ -4,16 +4,6 @@ import './GameStyle.css';
 import GameWindow from './GameWindow.js';
 import PlayerPanel from './PlayerPanel.js';
 
-// class MyComponent extends React.Component { 
-    
-//     myFunction() { 
-//       this.props.history.push("/dashboard"); 
-//     } 
-    
-//   } 
-  
-//   export default withRouter(MyComponent);
-
 export default function GamePage({ userToken }) {
     return (
         <div id='main'>
