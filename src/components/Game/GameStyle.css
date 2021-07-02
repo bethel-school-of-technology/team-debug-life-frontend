@@ -219,3 +219,13 @@
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }
+
+.gwindow6 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/Congratulations.png");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
