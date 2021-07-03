@@ -77,6 +77,8 @@ export default function GameWindow2() {
                 <Box id={48} />
             </div >
 
+            
+
             <div className="row">
                 <Box id={49} />
                 <Box id={50} />
