@@ -56,11 +56,12 @@ function CreateAccount( props ) {
                         </div>
                     </div>
                 </form>
-                <div className="accountDisclaimer">
-                    <small >Already have an account?</small>
-                    <button onClick= {SkipToLogin}>Skip to Login</button>
-                </div>   
             </div>
+            <div className="accountDisclaimer">
+                <label>
+                    Already have an Account? <button onClick= {SkipToLogin} className='ui-btn-alt form-btn'>Skip to Login</button>
+                </label>
+            </div>    
         </div>
     )
 }
