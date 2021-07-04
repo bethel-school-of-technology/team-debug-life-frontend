@@ -41,27 +41,30 @@ async function loginUser(credentials) {
     }
 
     return(
-        <div className='form-wrapper'>
-            <h1>Please Log In</h1>
-            <form onSubmit={handleSubmit}>
-                <div className='input-group'>
-                    <label>
-                        <p>Username</p>
-                        <input type='text' onChange={e => setUserName(e.target.value)}/>
-                    </label>
-                    <label>
-                        <p>Password</p>
-                        <input type='password' onChange={e => setPassword(e.target.value)}/>
-                    </label>
-                    <div className='btn-container'>
-                        <button onClick={handleSubmit} className='ui-btn form-btn'>Login</button>
+        <div>
+            <div className='form-wrapper'>
+                <h1>Please Log In</h1>
+                <form onSubmit={handleSubmit}>
+                    <div className='input-group'>
+                        <label>
+                            <p>Username</p>
+                            <input type='text' onChange={e => setUserName(e.target.value)}/>
+                        </label>
+                        <label>
+                            <p>Password</p>
+                            <input type='password' onChange={e => setPassword(e.target.value)}/>
+                        </label>
+                        <div className='btn-container'>
+                            <button onClick={handleSubmit} className='ui-btn form-btn'>Login</button>
+                        </div>
                     </div>
-                </div>
-                <div className="accountDisclaimer">
-                    <small >Need an account?</small>
-                    <button onClick= {ReturnToCreateAccount}>Set One Up</button>
-                </div>   
-            </form>
+                </form>
+            </div>
+            <div className="accountDisclaimer">
+                <label>
+                    Need an Account? <button onClick= {ReturnToCreateAccount} className='ui-btn-alt form-btn'>Set One Up</button>
+                </label>
+            </div>   
         </div>
     )
 }
