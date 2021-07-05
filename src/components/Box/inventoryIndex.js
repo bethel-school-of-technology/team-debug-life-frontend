@@ -24,9 +24,9 @@ function InventoryInd() {
 
     return (
         <div>
-           <img src = {'Crowbar.png'} alt= 'crowbar' {...CrowbarVisible ? "hidden" : "shown"} />
+           <img src = {'Crowbar.png'} alt= 'Crowbar' {...CrowbarVisible ? "hidden" : "shown"} />
            <img src = {'Lightsaber.png'} alt='Lightsaber' {...LightsaberVisible ? "hidden" : "shown"} />
-           <img src = {'Key.png'} alt='jailKey' {...KeyVisible ? "hidden" : "shown"} />
+           <img src = {'Key.png'} alt='Key' {...KeyVisible ? "hidden" : "shown"} />
         </div>
     )
 };
