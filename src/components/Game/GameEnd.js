@@ -9,7 +9,7 @@ import { BrowserRouter as Router, useHistory } from 'react-router-dom';
 
 import PlayerPanel from './PlayerPanel.js';
 
-export default function GamePage({ userToken }) {
+export default function GamePage(props) {
 
     // Reset inventory on start of room 2
     localStorage.setItem('inventory', ['Crowbar', 'Key', 'Lightsaber']);
@@ -17,7 +17,7 @@ export default function GamePage({ userToken }) {
 
     return (
         <div id='main'>
-            <PlayerPanel userToken={userToken} />
+            <PlayerPanel userToken={props.userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindow6 />

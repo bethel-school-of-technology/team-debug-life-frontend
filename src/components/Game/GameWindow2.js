@@ -129,6 +129,7 @@ export default function GameWindow2() {
                     <Box id={75} />
                     <Box id={76} />
                 </div>
+            </div>
             <Game/>
         </div>
     )

@@ -1,20 +1,59 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow4 from './GameWindow4.js';
 import '../Game/inventory.js';
 import PlayerPanel from './PlayerPanel.js';
-import InventoryInd from '../Box/InventoryIndex.js';
 
-export default function GamePage({ userToken }) {
+import UIfx from 'uifx';
+import mp3 from '../../sounds/doorSound.mp3';
+
+const soundEffect = new UIfx(mp3);
+soundEffect.setVolume(0.5);
+
+async function getRoom(token) {
+    return fetch('http://localhost:8080/api/getroom', {
+        method: 'GET',
+        headers: {
+            'Authorization': `${token}`,
+            'Content-Type': 'application/json'
+        },
+    })
+    .then(data => data.json())
+}
+
+function GamePage(props) {
 
     // Reset inventory on start of room 4
     localStorage.setItem('inventory', ['Crowbar', 'Key']);
     console.log(localStorage.getItem('inventory'));
 
+    useEffect(() => {
+        async function checkPage() {
+            soundEffect.play();
+            // Set username
+            // Check username and if null, reroute to login page
+            let page = await getRoom(props.userToken);
+
+            if (!page.room || page.room == 1) {
+                props.history.push('/game');
+            } else if (page.room == 2) {
+                props.history.push('/game2');
+            } else if (page.room == 3) {
+                props.history.push('/game3');
+            } else if (page.room == 4) {
+                console.log(page.room);
+            } else if (page.room == 5) {
+                props.history.push('/game5');
+            }
+        }
+        checkPage();
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
     return (
         <div id='main'>
-            <PlayerPanel userToken={userToken} />
+            <PlayerPanel userToken={props.userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindow4 />
@@ -58,3 +97,5 @@ export default function GamePage({ userToken }) {
 GamePage.propTypes = {
     userToken: PropTypes.string.isRequired
 }
+
+export default withRouter(GamePage);
