@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
-function Egg() {
+function SmallBoxR() {
     const [text, setText] = useState('')
 
     function toggleText() {
         
     }
     
-    return <div className="egg" onClick={toggleText}>{text}</div>
+    return <div className="smallBoxR" onClick={toggleText}>{text}</div>
 }
 
-export default Egg
+export default SmallBoxR

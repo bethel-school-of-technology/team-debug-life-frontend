@@ -3,6 +3,7 @@ import Box from '../Box/index';
 import Crowbar from '../Box/crowbar';
 import Egg from '../Box/egg';
 import MessExit from '../Box/messExit';
+import Time from './Timer';
 
 export default function GameWindow2() {
     return(
@@ -108,7 +109,7 @@ export default function GameWindow2() {
             </div >
 
             <div className="row">
-                <Box id={70} />
+                <Time id={70} />
                 <Box id={71} />
                 <Box id={72} />
                 <Box id={73} />

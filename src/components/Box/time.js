@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+import Time from '../Game/Timer';
 
-function Egg() {
+
+function Time() {
     const [text, setText] = useState('')
 
     function toggleText() {
         
     }
-    
-    return <div className="egg" onClick={toggleText}>{text}</div>
+
+    return <div className="time">{Time}</div>
 }
 
-export default Egg
+export default Time
