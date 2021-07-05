@@ -2,6 +2,9 @@ import React from 'react';
 import Box from '../Box/index';
 import JailDoor from '../Box/jailDoor';
 import Lightsaber from '../Box/lightsaber';
+import '../Box/inventoryIndex';
+import '../Game/inventory.js';
+import Game from './inventory.js'
 
 
 export default function GameWindow4() {
@@ -15,6 +18,8 @@ export default function GameWindow4() {
                 <Box id={4} />
                 <Box id={5} />
                 <Box id={6} />
+
+                <aside><Game/></aside>
             </div>
 
             <div className="row">

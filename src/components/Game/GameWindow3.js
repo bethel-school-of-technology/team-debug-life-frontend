@@ -2,6 +2,10 @@ import React from 'react';
 import Box from '../Box/index';
 import Key from '../Box/key';
 import BunkDoor from '../Box/bunkDoor';
+import '../Box/inventoryIndex';
+import '../Game/inventory.js';
+import Game from './inventory.js'
+
 
 export default function GameWindow3() {
     return(
@@ -14,6 +18,8 @@ export default function GameWindow3() {
                 <Box id={4} />
                 <Box id={5} />
                 <Box id={6} />
+                
+                <aside><Game/></aside>
             </div>
 
             <div className="row">

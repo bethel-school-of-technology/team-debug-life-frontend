@@ -1,26 +1,35 @@
 import React, { useState } from 'react'
-import Crowbar from '../Box/crowbar';
+import Crowbar from './crowbar';
+import Lightsaber from './lightsaber';
+import Key from './key';
 
+function InventoryInd() {
+    const [CrowbarVisible, makeCrowbarVisible] = useState(false)
+    const [LightsaberVisible, makeLightsaberVisible] = useState(false)
+    const [KeyVisible, makeKeyVisible] = useState(false)
 
-function Tools() {
+    let inventory = localStorage.getItem('inventory')
 
-    function Crowbar() {
-        const [visible, setVisible] = useState(false)
-    
-        function toggleVisible() {
-            setVisible(true)
-        }
+    if(inventory && inventory.includes('Crowbar')){
+            makeCrowbarVisible(true)
+            }
 
-        
+    if(inventory && inventory.includes('Lightsaber')){
+            makeLightsaberVisible(true)
+            }
 
+    if(inventory && inventory.includes('Key')){
+            makeKeyVisible(true)
+            } 
 
-
-
-
-     
-        
-        return <div className={visible? "noCrowbar ": "Crowbar"} onClick={toggleVisible}></div>
-    }
+    return (
+        <div>
+           <img src = {'Crowbar.png'} alt= 'crowbar' {...CrowbarVisible ? "hidden" : "shown"} />
+           <img src = {'Lightsaber.png'} alt='Lightsaber' {...LightsaberVisible ? "hidden" : "shown"} />
+           <img src = {'Key.png'} alt='jailKey' {...KeyVisible ? "hidden" : "shown"} />
+        </div>
+    )
 };
 
-export default Tools
+
+export default InventoryInd; 

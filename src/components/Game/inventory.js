@@ -4,6 +4,7 @@ import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-dracula';
 import './inventoryWindow';
+import '../Box/inventoryIndex';
 
 export default function Game() {
     
@@ -24,8 +25,10 @@ export default function Game() {
                 />
                 <div id = "console" className = "console"></div>
             </div>
-            <div className = 'content'>
-                <div className = 'inventory'></div>
+            <div className = 'hidden'>
+                <div className = 'shown'>
+                    <inventoryIndex />
+                </div>
             </div>
         </div>
         

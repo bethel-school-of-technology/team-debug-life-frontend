@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow4 from './GameWindow4.js';
-
-
-
+import '../Box/inventoryIndex';
+import '../Game/inventory.js';
 import PlayerPanel from './PlayerPanel.js';
 
 export default function GamePage({ userToken }) {
@@ -19,6 +18,7 @@ export default function GamePage({ userToken }) {
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindow4 />
+                <inventoryIndex />
             </div>
 
             <div id='btn-bar'>

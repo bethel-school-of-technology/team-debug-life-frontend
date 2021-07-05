@@ -11,10 +11,7 @@ function Crowbar() {
         let inventory = localStorage.getItem('inventory');
         localStorage.setItem('inventory', [...inventory, 'Crowbar']);
     }
-    // function crowbarEquip() {
-    //     if (visible=false)
-
-
+    
     return <div className={visible ? "crowbar" : "noCrowbar"} onClick={function() {setItem(); toggleVisible()}}></div>
 }
 

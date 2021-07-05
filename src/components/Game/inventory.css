@@ -8,13 +8,12 @@
 }
 
 .inventory {
-    margin-bottom: 15vh;
     display: grid;
-    grid-template-columns: repeat(10, 5vw);
-    grid-template-rows: repeat(5, 3.5vw);
+    grid-template-columns: (10, 5vw);
+    grid-template-rows: (5, 3.5vw);
     grid-gap: 0px;
     text-align: center;
-    background: rgb(245, 243, 243);
+    background: rgb(14, 13, 13);
 }
 
 content {
@@ -28,6 +27,13 @@ content {
     height: 30%;
 }
 
-.Tools{
-    background-color: chocolate;
+.shown{
+width: 81.8px;
+height: 57.1px;
+color: red;
+background-size: 81.8px 57.1px;
+}
+
+.hidden{
+    display:hidden;
 }

@@ -1,3 +1,0 @@
-   let inventory = 
-        localStorage.getItem(Inventory)
-        localStorage.setItem ('inventory'[inventory, 'Crowbar'])
