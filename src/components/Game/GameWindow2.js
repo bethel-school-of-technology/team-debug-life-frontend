@@ -4,6 +4,7 @@ import Crowbar from '../Box/crowbar';
 import Egg from '../Box/egg';
 import MessExit from '../Box/messExit';
 import Game from './inventory.js';
+import Time from './Timer';
 
 export default function GameWindow2() {
     return(
@@ -118,7 +119,16 @@ export default function GameWindow2() {
                     <Box id={75} />
                     <Box id={76} />
                 </div>
-            </div>
+
+                <div className="row">
+                    <Time id={70} />
+                    <Box id={71} />
+                    <Box id={72} />
+                    <Box id={73} />
+                    <Box id={74} />
+                    <Box id={75} />
+                    <Box id={76} />
+                </div>
             <Game/>
         </div>
     )

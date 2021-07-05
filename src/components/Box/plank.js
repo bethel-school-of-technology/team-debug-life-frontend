@@ -17,7 +17,7 @@ const redirect = () => {
         }
     }
     
-    return <div className="plank" onClick={nextLevel6}>End</div>
+    return <div className="plank" onClick={nextLevel6}></div>
 }
 
 export default Plank

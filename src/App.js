@@ -7,9 +7,11 @@ import GamePage3 from './components/Game/GamePage3.js';
 import GamePage4 from './components/Game/GamePage4.js';
 import GamePage5 from './components/Game/GamePage5.js';
 import GameEnd from './components/Game/GameEnd';
+import GameOver from './components/Game/GameOver';
 import useToken from './useToken';
 import Login from './components/Forms/Login/Login.js';
 import CreateAccount from './components/Forms/Create-account/CreateAccount.js';
+import TimePage from './components/Game/TimePage';
 
 function App() {
   const { token, setToken } = useToken();
@@ -42,6 +44,16 @@ function App() {
           <Route path='/gameEnd'>
             <GameEnd userToken={token} />
           </Route>
+          <Route path='/gameOver'>
+            <GameOver userToken={token} />
+          </Route>
+          
+          
+          <Route path='/timer'>
+            <TimePage userToken={token} />
+          </Route>
+          
+          
           <Redirect from='/' to="/game" />
         </Switch>
       </BrowserRouter>

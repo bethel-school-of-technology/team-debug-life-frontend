@@ -17,7 +17,7 @@ const redirect = () => {
         }
     }
     
-    return <div className="messExit" onClick={nextLevel3}>3</div>
+    return <div className="messExit" onClick={nextLevel3}></div>
 }
 
 export default MessExit
