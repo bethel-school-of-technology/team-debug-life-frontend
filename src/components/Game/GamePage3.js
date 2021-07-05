@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow3 from './GameWindow3.js';
+import InventoryInd from '../Box/InventoryIndex.js';
+import '../Game/inventory.js';
+
 
 
 

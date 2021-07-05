@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow4 from './GameWindow4.js';
-
-
-
+import '../Game/inventory.js';
 import PlayerPanel from './PlayerPanel.js';
+import InventoryInd from '../Box/InventoryIndex.js';
 
 export default function GamePage({ userToken }) {
 

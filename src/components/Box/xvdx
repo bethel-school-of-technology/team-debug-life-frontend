@@ -1,0 +1,30 @@
+function InventoryIndex() {
+    crowbarVisible, makeCrowbarVisible = useState...
+    keyVisible, makeKeyVisible = useState...
+    lightsaberVisible, makeLightsaberVisible = useState...
+
+    let inventory = my inventory from localStorage
+
+    if inventory contains crowbar
+        use makeCrowbarVisible
+
+    if inventory contains key
+        use makeKeyVisible
+    
+    if inventory contains lightsaber
+        use makeLightsaberVisible
+
+    and so on and so forth
+
+    return (
+        <div>
+            Image of crowbar, hidden or shown depending on crowbarVisible
+            Image of key, hidden or shown depending on keyVisible
+            Image of lightsaber, hidden or shown depending on lightsaberVisible
+            ...
+        </div>
+    )
+}
+
+    return <div className={visible? "noCrowbar ": "Crowbar"} onClick={toggleVisible}></div>
+    }

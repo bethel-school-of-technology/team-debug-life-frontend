@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow from './GameWindow.js';
 import PlayerPanel from './PlayerPanel.js';
+import Game from './inventory.js';
+import InventoryInd from '../Box/InventoryIndex.js';
+
 
 export default function GamePage({ userToken }) {
 
@@ -62,3 +65,5 @@ export default function GamePage({ userToken }) {
 GamePage.propTypes = {
     userToken: PropTypes.string.isRequired
 }
+
+
