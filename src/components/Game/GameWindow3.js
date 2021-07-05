@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '../Box/index';
 import Key from '../Box/key';
 import BunkDoor from '../Box/bunkDoor';
-import '../Box/inventoryIndex';
+import '../Box/InventoryIndex';
 import '../Game/inventory.js';
 import Game from './inventory.js'
 

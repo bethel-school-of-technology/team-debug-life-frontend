@@ -4,7 +4,7 @@ import './GameStyle.css';
 import GameWindow from './GameWindow.js';
 import PlayerPanel from './PlayerPanel.js';
 import Game from './inventory.js';
-import InventoryWindow from './inventoryWindow';
+import InventoryInd from '../Box/InventoryIndex.js';
 
 
 export default function GamePage({ userToken }) {
@@ -19,7 +19,7 @@ export default function GamePage({ userToken }) {
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindow />
-                <inventoryIndex />
+                <InventoryInd />
             </div>
 
             <div id='btn-bar'>

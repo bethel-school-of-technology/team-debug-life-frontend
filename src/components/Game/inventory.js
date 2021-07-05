@@ -4,7 +4,7 @@ import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-dracula';
 import './inventoryWindow';
-import '../Box/inventoryIndex';
+import '../Box/InventoryIndex';
 
 export default function Game() {
     

@@ -4,6 +4,7 @@ import './GameStyle.css';
 import GameWindow2 from './GameWindow2.js';
 //added code
 import { BrowserRouter as Router, useHistory } from 'react-router-dom';
+import InventoryInd from '../Box/InventoryIndex.js';
 
 
 
@@ -21,6 +22,7 @@ export default function GamePage({ userToken }) {
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindow2 />
+                <InventoryInd />
             </div>
 
             <div id='btn-bar'>
