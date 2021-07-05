@@ -18,7 +18,7 @@ function FloorBoard() {
     }
 
 
-    return <div className="floorBoard" onClick={nextLevel2}>2</div>
+    return <div className="floorBoard" onClick={nextLevel2}></div>
 }
 
 export default FloorBoard

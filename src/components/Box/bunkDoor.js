@@ -15,7 +15,7 @@ const redirect = () => {
         }
     }
     
-    return <div className="bunkDoor" onClick={nextLevel4}>4</div>
+    return <div className="bunkDoor" onClick={nextLevel4}></div>
 }
 
 export default BunkDoor

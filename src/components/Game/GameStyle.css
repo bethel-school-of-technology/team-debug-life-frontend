@@ -1,6 +1,6 @@
 #main {
     width: 100%;
-    text-align: center;  
+    text-align: center;
 }
 
 #player-panel {
@@ -10,12 +10,10 @@
     right: 25px;
     width: 200px;
     height: 64px;
-
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
-
     align-items: center;
     overflow: hidden;
     font-size: small;
@@ -26,7 +24,9 @@
     width: 64px;
     height: 64px;
     float: left;
-} #player-icon img {
+}
+
+#player-icon img {
     height: 100%;
 }
 
@@ -41,9 +41,7 @@
     width: 900px;
     height: 500px;
     margin: auto;
-
     align-items: center;
-
     background-color: black;
     border: 1px solid black;
     border-radius: 10px;
@@ -54,7 +52,6 @@
     display: flex;
     width: 900px;
     margin: 2px auto 2px auto;
-
     justify-content: space-between;
 }
 
@@ -69,15 +66,32 @@
     text-align: left;
 }
 
-
-
 /* ↓ GAME WINDOW STYLING ↓ */
 
 .box {
     width: 81.8px;
     height: 57.1px;
     color: red;
+}
 
+.smallBox {
+    width: 81.8px;
+    height: 55.3px;
+    color: red;
+}
+
+.smallBoxL {
+    width: 81.8px;
+    height: 33.2px;
+    color: red;
+    border-right: 2px red solid;
+}
+
+.smallBoxR {
+    width: 81.8px;
+    height: 33.2px;
+    color: red;
+    border-left: 2px red solid;
 }
 
 .egg {
@@ -88,39 +102,42 @@
     background-size: 81.8px 57.1px;
 }
 
+.continue {
+    width: 81.8px;
+    height: 30.1px;
+    color: red;
+    border-top: 2px red solid;
+    border-bottom: 2px red solid;
+}
+
 .floorBoard {
     width: 81.8px;
     height: 57.1px;
     color: red;
-
 }
 
 .messExit {
     width: 81.8px;
     height: 57.1px;
     color: red;
-
 }
 
 .bunkDoor {
     width: 81.8px;
     height: 57.1px;
     color: red;
-
 }
 
 .jailDoor {
     width: 81.8px;
     height: 57.1px;
     color: red;
-
 }
 
 .plank {
     width: 81.8px;
     height: 57.1px;
     color: red;
-
 }
 
 .crowbar {
@@ -153,6 +170,12 @@
     color: red;
     background-image: url('../../images/Lightsaber.png');
     background-size: 81.8px 57.1px;
+}
+
+.time {
+    width: 81.8px;
+    height: 57.1px;
+    color: red;
 }
 
 .gwindow {
@@ -211,6 +234,16 @@
     width: 900px;
     height: 450px;
     background: url("../../images/Congratulations.png");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindowOver {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/uSuck.jpg");
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }

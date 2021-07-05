@@ -15,7 +15,7 @@ function nextLevel5() {
     }
 }
     
-    return <div className="jailDoor" onClick={nextLevel5}>5</div>
+    return <div className="jailDoor" onClick={nextLevel5}></div>
 }
 
 export default JailDoor
