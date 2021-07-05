@@ -4,16 +4,22 @@ import './GameStyle.css';
 import Time from './Timer';
 import PlayerPanel from './PlayerPanel.js';
 import GameWindowOver from './GameWindowOver';
+import UIfx from 'uifx';
+import mp3 from '../../sounds/Death.mp3';
 
-export default function GamePage({ userToken }) {
+const soundEffect = new UIfx(mp3);
+soundEffect.setVolume(0.5);
+
+export default function GamePage(props) {
 
     // Reset inventory on start of room 1
     localStorage.setItem('inventory', []);
     console.log(localStorage.getItem('inventory'));
+    soundEffect.play();
 
     return (
         <div id='main'>
-            <PlayerPanel userToken={userToken} />
+            <PlayerPanel userToken={props.userToken} />
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindowOver />
