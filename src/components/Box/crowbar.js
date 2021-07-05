@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 function Crowbar() {
     const [visible, setVisible] = useState(true)
-    //let cEquip = false;
     function toggleVisible() {
         setVisible(false)
 
@@ -11,7 +10,8 @@ function Crowbar() {
         let inventory = localStorage.getItem('inventory');
         localStorage.setItem('inventory', [...inventory, 'Crowbar']);
     }
-    
+
+
     return <div className={visible ? "crowbar" : "noCrowbar"} onClick={function() {setItem(); toggleVisible()}}></div>
 }
 

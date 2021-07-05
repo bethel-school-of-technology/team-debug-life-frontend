@@ -58,21 +58,6 @@
     justify-content: space-between;
 }
 
-.ui-btn {
-    background-color: black;
-    color: white;
-    border-radius: 8px;
-    border-width: 0;
-    padding: 5px 10px 5px 10px;
-    transition: all 0.1s;
-} .ui-btn:hover {
-    background-color: #111;
-    color: lightgray;
-    border-radius: 5px;
-    box-shadow: 0 0 2px 1px gray;
-    cursor: pointer;
-}
-
 #info {
     width: 900px;
     margin: auto;
@@ -216,6 +201,16 @@
     width: 900px;
     height: 450px;
     background: url("../../images/topDeck.png");
+    background-repeat: no-repeat;
+    background-size: 900px 400px;
+}
+
+.gwindow6 {
+    display: flex;
+    flex: auto;
+    width: 900px;
+    height: 450px;
+    background: url("../../images/Congratulations.png");
     background-repeat: no-repeat;
     background-size: 900px 400px;
 }
