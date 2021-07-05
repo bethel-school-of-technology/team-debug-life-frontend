@@ -1,21 +1,23 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 
 function Plank() {
-    const [text, setText] = useState('')
+    let history = useHistory();
 
-    function toggleText() {
-        if(text === '') {
-            setText('Yeet')
-        }
-        else if(text === 'Yeet') {
-            setText('Yote')
-        }
-        else if(text === 'Yote') {
-            setText('')
+const redirect = () => {
+    history.push('/gameEnd')
+}
+
+    function nextLevel6() {
+
+        let hasCrowbar = true;
+        if(hasCrowbar === true) {
+            redirect()
+
         }
     }
     
-    return <div className="plank" onClick={toggleText}>{text}</div>
+    return <div className="plank" onClick={nextLevel6}>End</div>
 }
 
 export default Plank
