@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '../Box/index';
 import JailDoor from '../Box/jailDoor';
 import Lightsaber from '../Box/lightsaber';
-import '../Box/InventoryIndex';
+import '../Box/inventoryIndex';
 import '../Game/inventory.js';
 import Game from './inventory.js'
 

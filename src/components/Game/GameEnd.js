@@ -9,11 +9,23 @@ import { BrowserRouter as Router, useHistory } from 'react-router-dom';
 
 import PlayerPanel from './PlayerPanel.js';
 
+import UIfx from 'uifx';
+import sky from '../../sounds/youreFinallyAwake.mp3';
+
+const soundEffect = new UIfx(sky);
+soundEffect.setVolume(0.5);
+
 export default function GamePage(props) {
 
     // Reset inventory on start of room 2
     localStorage.setItem('inventory', ['Crowbar', 'Key', 'Lightsaber']);
     console.log(localStorage.getItem('inventory'));
+
+
+    soundEffect.play();
+    console.log("FUS RO DA!")
+
+
 
     return (
         <div id='main'>

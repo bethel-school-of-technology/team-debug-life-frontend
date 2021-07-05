@@ -111,16 +111,6 @@ export default function GameWindow2() {
                 </div >
 
                 <div className="row">
-                    <Box id={70} />
-                    <Box id={71} />
-                    <Box id={72} />
-                    <Box id={73} />
-                    <Box id={74} />
-                    <Box id={75} />
-                    <Box id={76} />
-                </div>
-
-                <div className="row">
                     <Time id={70} />
                     <Box id={71} />
                     <Box id={72} />

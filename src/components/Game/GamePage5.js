@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow5 from './GameWindow5.js';
-import InventoryInd from '../Box/InventoryIndex.js';
+import InventoryInd from '../Box/inventoryIndex.js';
 
 
 

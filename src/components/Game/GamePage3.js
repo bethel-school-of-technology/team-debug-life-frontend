@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './GameStyle.css';
 import GameWindow3 from './GameWindow3.js';
-import InventoryInd from '../Box/InventoryIndex.js';
+import InventoryInd from '../Box/inventoryIndex.js';
 import '../Game/inventory.js';
 import UIfx from 'uifx';
 import PlayerPanel from './PlayerPanel.js';

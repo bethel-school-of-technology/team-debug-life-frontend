@@ -5,7 +5,7 @@ import './GameStyle.css';
 import GameWindow2 from './GameWindow2.js';
 //added code
 import { BrowserRouter as Router, useHistory } from 'react-router-dom';
-import InventoryInd from '../Box/InventoryIndex.js';
+import InventoryInd from '../Box/inventoryIndex.js';
 
 
 

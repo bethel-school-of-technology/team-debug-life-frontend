@@ -1,8 +1,8 @@
 import React from 'react';
-import Tools from '../Box/InventoryIndex';
+import Tools from '../Box/inventoryIndex';
 import "./inventory.css"; 
 import Game from './inventory.js';
-import '../Box/InventoryIndex.js';
+import '../Box/inventoryIndex.js';
 
 
 
