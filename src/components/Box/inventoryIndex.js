@@ -3,6 +3,8 @@ import Crowbar from './crowbar';
 import Lightsaber from './lightsaber';
 import Key from './key';
 import CrowbarImg from '../../images/crowbar.png';
+import LightsaberImg from '../../images/Lightsaber.png';
+import KeyImg from '../../images/jailKey.png';
 
 function InventoryInd() {
         const [CrowbarVisible, makeCrowbarVisible] = useState(false)
@@ -26,10 +28,10 @@ function InventoryInd() {
         }, [])
 
         return (
-                <div>
-                        <img src = {CrowbarImg} alt= 'Crowbar' className={CrowbarVisible ? "hidden" : "shown"} />
-                        <img src = {'Lightsaber.png'} alt='Lightsaber' className={LightsaberVisible ? "hidden" : "shown"} />
-                        <img src = {'Key.png'} alt='Key' className={KeyVisible ? "hidden" : "shown"} />
+                <div className="game">
+                        <img src = {CrowbarImg} alt= 'Crowbar' className={CrowbarVisible ? "shown" : "hidden"} />
+                        <img src = {LightsaberImg} alt='Lightsaber' className={LightsaberVisible ? "shown" : "hidden"} />
+                        <img src = {KeyImg} alt='Key' className={KeyVisible ? "shown" : "hidden"} />
                 </div>
         )
 };

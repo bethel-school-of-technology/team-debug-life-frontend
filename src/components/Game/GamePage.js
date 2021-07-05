@@ -19,7 +19,6 @@ export default function GamePage({ userToken }) {
             <h1>Dreaming Dutchman's Spooky Escape</h1>
             <div id='game-wrapper'>
                 <GameWindow />
-                <InventoryInd />
             </div>
 
             <div id='btn-bar'>
