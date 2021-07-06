@@ -35,11 +35,6 @@ export default function GamePage(props) {
                 <GameWindow6 />
             </div>
 
-            <div id='btn-bar'>
-                <button className='ui-btn'>Save</button>
-                <button className='ui-btn'>Save & Quit</button>
-            </div>
-
             <div id='info'>
                 <div id='about-game'>
                     <h2 id='ag-header'>About Game</h2><hr></hr>
