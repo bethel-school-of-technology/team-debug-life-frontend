@@ -52,7 +52,7 @@ function CreateAccount( props ) {
                             <input type='password' onChange={e => setPassword(e.target.value)}/>
                         </label>
                         <div className='btn-container'>
-                            <button onClick={handleSubmit} className='ui-btn form-btn'>Login</button>
+                            <button onClick={handleSubmit} className='ui-btn form-btn'>Create Account</button>
                         </div>
                     </div>
                 </form>
